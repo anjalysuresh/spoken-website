@@ -16,10 +16,10 @@ pip3 install -r requirements-py3.txt
 
 #cd Spoken tutorial script creation 
 
-sudo cp sample.config.py spoken/config.py
+cp sample.config.py spoken/config.py
 cd spoken
 
-sudo chown jenkins:jenkins config.py
+chown jenkins:jenkins config.py
 cd ..
 cd events
 
