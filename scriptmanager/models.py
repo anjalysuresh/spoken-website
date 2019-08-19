@@ -4,11 +4,11 @@ from django.contrib.auth.models import User
 # Create your models here.
 
 class Script(models.Model):
-	tutorial = models.ForeignKey(TutorialDetail)
-	language = models.ForeignKey(Language)
+	tutorial = models.ForeignKey(TutorialDetail,on_delete=models.CASCADE)
+	language = models.ForeignKey(Language,on_delete=models.CASCADE)
 	status = models.BooleanField(default=False)
 	data_file = models.FileField(upload_to='scripts')
-	user = models.ForeignKey(User,related_name='user_id')
+	user = models.ForeignKey(User,related_name='user_id',on_delete=models.CASCADE)
 	ordering = models.CharField(max_length=200, default='')
 
 	def __str__(self):
@@ -26,7 +26,7 @@ class ScriptDetail(models.Model):
 
 class Comment(models.Model):
 	comment = models.TextField()
-	user=models.ForeignKey(User)
+	user=models.ForeignKey(User,on_delete=models.CASCADE)
 	script_details=models.ForeignKey(ScriptDetail, on_delete=models.CASCADE)
 	created = models.DateTimeField(auto_now_add=True)
 	updated = models.DateTimeField(auto_now=True)
