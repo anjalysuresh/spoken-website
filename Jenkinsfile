@@ -17,7 +17,8 @@ stage ('Stage Checkout'){
   stage('build') {
             
                 echo 'Building..'
-                
+                sh 'virtualenv env -p python3.5'
+                sh '. env/bin/activate'
                 sh "./spoken.sh"
               
                 
