@@ -7,7 +7,7 @@ export WORKSPACE=`pwd`
 
 
 
-sudo apt-get install python3-dev libmysqlclient-dev
+#sudo apt-get install python3-dev libmysqlclient-dev
 
 pwd
 pip3 install -r requirements-dev.txt
