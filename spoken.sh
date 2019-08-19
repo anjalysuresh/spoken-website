@@ -1,9 +1,10 @@
 #!/bin/bash
-#d spkenv
+
 export WORKSPACE=`pwd`
-#virtualenv spkenv -p python3
-#source spkenv/bin/activate
-#cd Spoken tutorial script creation
+
+pip3 uninstall django==1.11
+pip3 install django==1.11
+rm -rf ~/.local
 
 
 sudo apt-get install python3-dev libmysqlclient-dev
