@@ -3,10 +3,10 @@ node {
 
 stage ('Activate'){
 
-      sh 'virtualenv env -p python3.5'
-      sh '. env/bin/activate'
+     sh "./activate.sh"
 
-   }
+     }
+ 
     
    
 stage ('Stage Checkout'){
