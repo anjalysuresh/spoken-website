@@ -32,7 +32,7 @@ stage ('Stage Checkout'){
     
    stage('test')
      {
-    //  sh "./test.sh"  
+        sh "./tests.sh"  
     //  sh "./selen.sh"
      }
    
