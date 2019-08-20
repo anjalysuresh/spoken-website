@@ -1,5 +1,12 @@
 node {
   // Mark the code checkout 'stage'....
+
+stage ('Activate'){
+
+      sh 'virtualenv env -p python3.5'
+      sh '. env/bin/activate'
+
+   }
     
    
 stage ('Stage Checkout'){
@@ -17,8 +24,8 @@ stage ('Stage Checkout'){
   stage('build') {
             
                 echo 'Building..'
-                sh 'virtualenv env -p python3.5'
-                sh '. env/bin/activate'
+                
+                
                 sh "./spoken.sh"
               
                 
