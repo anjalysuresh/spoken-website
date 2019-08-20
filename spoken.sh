@@ -1,7 +1,7 @@
 #!/bin/bash
 
 export WORKSPACE='var/lib/jenkins/workspace/venv/bin'
-`
+
 if [ ! -d "venv" ]; then
         virtualenv venv
 fi
