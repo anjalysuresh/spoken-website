@@ -1,11 +1,9 @@
 node {
   // Mark the code checkout 'stage'....
 
-stage ('Activate'){
+ 
 
-     sh "./activate.sh"
-
-     }
+    
  
     
    

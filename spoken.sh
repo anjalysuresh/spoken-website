@@ -1,7 +1,11 @@
 #!/bin/bash
 
-export WORKSPACE=`pwd`
-
+export WORKSPACE='var/lib/jenkins/workspace/venv/bin'
+`
+if [ ! -d "venv" ]; then
+        virtualenv venv
+fi
+. venv/bin/activate
 
 
 
