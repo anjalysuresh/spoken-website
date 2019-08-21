@@ -1,9 +1,9 @@
 #!/bin/bash
 USERNAME=anjali
 IP=10.129.132.109
-ssh -l ${USERNAME} ${IP} "pwd; ls -la"
+ssh -l ${USERNAME} ${IP} bash << 'EOF'
 
-#ssh root@10.129.132.109
+
 pwd
 cd spoken_tutorial  
 virtualenv -p python3 venv
@@ -13,12 +13,12 @@ fi
 . venv/bin/activate
 
 
-#sudo rm -rf spoken-website
-#git clone https://github.com/anjalysuresh/spoken-website.git
+rm -rf spoken-website
+git clone https://github.com/anjalysuresh/spoken-website.git
 
 
+EOF
 
-#sudo apt-get install python3-dev libmysqlclient-dev
 
 #pip3 install -r requirements-dev.txt
 #pip3 install -r requirements-py3.txt
