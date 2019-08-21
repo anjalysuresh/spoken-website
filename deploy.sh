@@ -14,7 +14,7 @@ fi
 
 
 rm -rf spoken-website
-git clone https://github.com/anjalysuresh/spoken-website.git
+git clone -b scripts https://github.com/anjalysuresh/spoken-website.git
 cd spoken-website
 
 
