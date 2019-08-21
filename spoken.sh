@@ -36,7 +36,7 @@ pwd
 
 python3 manage.py makemigrations
 python3 manage.py migrate
-nohup python3 manage.py runserver 0.0.0.0:8000 &
+nohup python3 manage.py runserver 10.129.132.169:8000 &
 #python3 manage.py runserver 0.0.0.0:8000
 
 
