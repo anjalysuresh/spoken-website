@@ -11,4 +11,4 @@ fi
 
 pwd
 
-python3 manage.py test --keepdb scriptmanager
+#python3 manage.py test --keepdb scriptmanager
