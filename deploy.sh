@@ -33,11 +33,9 @@ cd spoken
 chown anjali:anjali config.py
 cd ..
 cd events
-
 cat > display.py
+cd ..  
 
-
-cd ..
 pwd
 
 python3 manage.py makemigrations
