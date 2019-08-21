@@ -34,9 +34,11 @@ chown anjali:anjali config.py
 cd ..
 cd events
 cat > display.py
-cd ..  
+cd   
 
 pwd
+
+cd spoken_tutorial/spoken-sebsite
 
 python3 manage.py makemigrations
 python3 manage.py migrate
