@@ -36,9 +36,13 @@ stage ('Stage Checkout'){
     //  sh "./selen.sh"
      }
    
-    
+   stage('deploy')
+      {
+   //     sh "./deploy.sh"   
+      }      
   
-  //branch name from Jenkins environment variables
+  
+//branch name from Jenkins environment variables
   // echo "My branch is: ${env.BRANCH_NAME}"
 
 //  def flavor = flavor(env.BRANCH_NAME)
