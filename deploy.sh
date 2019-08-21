@@ -35,7 +35,7 @@ cd ..
 cd events
 
 cat > display.py
-chmod +x display.py
+
 
 cd ..
 pwd
