@@ -17,30 +17,31 @@ rm -rf spoken-website
 git clone https://github.com/anjalysuresh/spoken-website.git
 
 
-EOF
 
 
-#pip3 install -r requirements-dev.txt
-#pip3 install -r requirements-py3.txt
+
+pip3 install -r requirements-dev.txt
+pip3 install -r requirements-py3.txt
 
 
 
  
 
-#cp sample.config.py spoken/config.py
-#cd spoken
+cp sample.config.py spoken/config.py
+cd spoken
 
-#chown root:root config.py
-#cd ..
-#cd events
+chown anjali:anjali config.py
+cd ..
+cd events
 
-#cat > display.py
-#chmod 777 display.py
-#pwd
-#cd ..
-#pwd
+cat > display.py
+chmod 777 display.py
 
-#python3 manage.py makemigrations
-#python3 manage.py migrate
-#python3 manage.py runserver 0.0.0.0:8000 
+cd ..
+pwd
 
+python3 manage.py makemigrations
+python3 manage.py migrate
+python3 manage.py runserver 0.0.0.0:8000 
+
+EOF
