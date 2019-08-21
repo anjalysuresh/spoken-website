@@ -38,7 +38,7 @@ cd
 
 pwd
 
-cd spoken_tutorial/spoken-sebsite
+cd spoken_tutorial/spoken-website
 
 python3 manage.py makemigrations
 python3 manage.py migrate
