@@ -38,7 +38,7 @@ stage ('Stage Checkout'){
    
    stage('deploy')
       {
-        sh "./deploy.sh"   
+  //      sh "./deploy.sh"   
       }      
   
   
