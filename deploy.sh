@@ -34,8 +34,9 @@ chown anjali:anjali config.py
 cd ..
 
 
-   
-
+cd events
+touch display.py   
+cd ..
 pwd
 
 
