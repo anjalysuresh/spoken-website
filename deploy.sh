@@ -32,14 +32,14 @@ cd spoken
 
 chown anjali:anjali config.py
 cd ..
-cd events
-cat > display.py
-cd   
+
+
+   
 
 pwd
 
-cd spoken_tutorial
-cd spoken-website
+
+
 
 ./manage.py migrate
 
