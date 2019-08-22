@@ -41,8 +41,7 @@ pwd
 cd spoken_tutorial
 cd spoken-website
 
-python3 manage.py makemigrations
-python3 manage.py migrate
-python3 manage.py runserver 0.0.0.0:8000 
+./manage.py migrate
+
 
 EOF
